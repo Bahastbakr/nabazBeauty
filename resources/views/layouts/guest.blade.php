@@ -25,8 +25,7 @@
 </head>
 
 <body>
-    <main class="md:px-16 md:py-16 px-8 py-8 md:mx-24 md:my-24 mx-4 my-4 bg-white space-y-20"
-        style="border-radius:70px">
+    <main class=" md:py-16 py-8 md:mx-24 md:my-24 mx-4 my-4 bg-white space-y-20 " style="border-radius:70px">
         {{ $slot }}
     </main>
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>

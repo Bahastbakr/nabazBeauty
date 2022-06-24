@@ -62,3 +62,74 @@
 .bg-nature-green {
     background-color: #7d9672;
 }
+
+.bg-nature-green-dark {
+    background-color: #5f7a5b;
+}
+
+.bg-nature-green-light {
+    background-color: #e4e6d9;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #7d9672;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #7d9672;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7d9672;
+}
+
+.custom-shape-divider-top-1656103830 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1656103830 svg {
+    position: relative;
+    display: block;
+    width: calc(287% + 1.3px);
+    height: 246px;
+}
+
+.custom-shape-divider-top-1656103830 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1656103971 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1656103971 svg {
+    position: relative;
+    display: block;
+    width: calc(287% + 1.3px);
+    height: 246px;
+}
+
+.custom-shape-divider-bottom-1656103971 .shape-fill {
+    fill: #FFFFFF;
+}
