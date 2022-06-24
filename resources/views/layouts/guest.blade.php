@@ -10,9 +10,10 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-
+    <script src="https://kit.fontawesome.com/5db2eb3dde.js" crossorigin="anonymous"></script>
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
@@ -24,7 +25,8 @@
 </head>
 
 <body>
-    <main class="px-24 py-24">
+    <main class="md:px-16 md:py-16 px-8 py-8 md:mx-24 md:my-24 mx-4 my-4 bg-white space-y-20"
+        style="border-radius:70px">
         {{ $slot }}
     </main>
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
