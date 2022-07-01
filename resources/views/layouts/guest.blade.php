@@ -25,9 +25,11 @@
 </head>
 
 <body>
-    <main class=" md:py-16 py-8 md:mx-24 md:my-24 mx-4 my-4 bg-white space-y-20 " style="border-radius:70px">
+
+    <main class="md:py-16 py-8 md:mx-24 md:my-24 mx-4 my-4 bg-white space-y-20 " style="border-radius:70px;">
         {{ $slot }}
     </main>
+    <img style="z-index: -1;" src="/images/paper1.png" class="absolute md:w-80 top-0 right-0" alt="">
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
 
 </body>

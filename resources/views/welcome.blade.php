@@ -1,6 +1,6 @@
 <x-guest-layout>
 
-    <nav class="bg-transparent px-2 py-2.5  dark:bg-gray-800">
+    <nav class="bg-transparent px-2 py-2.5   dark:bg-gray-800">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
             <a href="/" class="flex items-center">
                 <img src="/images/logo.png" class="mr-3 h-6 sm:h-12" alt="nabaz beauty Logo">
@@ -194,7 +194,7 @@
 
 
         <section
-            class="flex bg-[url('/images/quote.png')] bg-no-repeat bg-left bg-fixed	 relative flex-col gap-y-20 py-48 mb-48 bg-nature-green-dark">
+            class="flex bg-[url('/images/quote.png')] bg-no-repeat bg-left bg-fixed	 relative flex-col gap-y-20 py-48 mb-28 bg-nature-green-dark">
             <div class="custom-shape-divider-top-1656103830">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
@@ -293,6 +293,101 @@
                         class="shape-fill"></path>
                 </svg>
             </div>
+        </section>
+
+
+        <section class="flex flex-col gap-y-20  mb-48">
+            <div class="flex flex-col">
+                <h3 class="text-6xl text-center magiesta">Latest Articles</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:px-48">
+                <div>
+                    <img src="/images/latestA1.png" alt="latestA1">
+                </div>
+                <div>
+                    <img src="/images/latestA2.png" alt="latestA2">
+                </div>
+                <div>
+                    <img src="/images/latestA3.png" alt="latestA3">
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-y-20  mb-48">
+
+            <div class="grid grid-cols-1 space-y-28 md:px-48">
+                <div class="grid grid-cols-2 gap-5">
+                    <div class="flex flex-col">
+                        <h3 class="text-9xl text-center magiesta">Contact us</h3>
+                        <h3 class="text-8xl text-center magiesta">Anytime!</h3>
+                    </div>
+                    <div class="flex flex-col gap-y-4">
+                        <div class="flex flex-col items-start">
+                            <h3 class="text-3xl  text-nature-green-dark milliard-medium">E-mail:</h3>
+                            <h3 class="text-2xl  milliard-light"><i> Info@nabazbeauty.com </i></h3>
+                        </div>
+                        <div class="flex flex-col items-start">
+                            <h3 class="text-3xl  text-nature-green-dark milliard-medium">Address</h3>
+                            <h3 class="text-2xl  milliard-light"><i> As Sulaymaniyah, Iraq, Ashaba Spi
+                                    Building, NO.50
+                                </i></h3>
+                        </div>
+                        <div class="flex flex-col items-start">
+                            <h3 class="text-3xl  text-nature-green-dark milliard-medium">Phone</h3>
+                            <h3 class="text-2xl  milliard-light"><i> +964 (0) 770 151 4166 </i>
+                        </div>
+
+
+                    </div>
+                    <div class="grid grid-cols-2 gap-5"></div>
+                </div>
+
+                <div class="grid grid-cols-2 items-center gap-5">
+                    <div class="flex flex-col">
+                        <h3 class="text-5xl text-center magiesta">Or leave</h3>
+                        <h3 class="text-8xl text-center magiesta">a Message</h3>
+                    </div>
+                    <form class="flex flex-col gap-y-10">
+                        <div class="mb-5">
+                            <div class="relative z-0">
+                                <input type="text" id="floating_standard"
+                                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                                    placeholder=" " />
+                                <label for="floating_standard"
+                                    class="absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your
+                                    Name</label>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <div class="relative z-0">
+                                <input type="text" id="floating_standard"
+                                    class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                                    placeholder=" " />
+                                <label for="floating_standard"
+                                    class="absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your
+                                    E-mail</label>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <div class="relative z-0">
+                                <input type="text" id="floating_standard"
+                                    class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                                    placeholder=" " />
+                                <label for="floating_standard"
+                                    class="absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your
+                                    message</label>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <button type="button"
+                                class="text-white bg-nature-green hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-900 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Send</button>
+
+                        </div>
+
+                    </form>
+                    <div class="grid grid-cols-2 gap-5"></div>
+                </div>
         </section>
     </section>
 
