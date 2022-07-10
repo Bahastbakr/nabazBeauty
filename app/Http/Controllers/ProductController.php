@@ -43,4 +43,10 @@ class ProductController extends Controller
             }
         }
     }
+
+    public function indexProductClient()
+    {
+        $products = Product::all();
+        return view('products', ['products' => $products]);
+    }
 }

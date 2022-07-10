@@ -37,6 +37,7 @@
             </header>
         @endif
 
+
         <!-- Page Content -->
         <main class="container mx-auto py-5 ">
             {{ $slot }}

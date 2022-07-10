@@ -30,6 +30,10 @@ Route::middleware([
     })->name('dashboard');
 });
 
+
+Route::get('/products', [App\Http\Controllers\ProductController::class, 'indexProductClient'])->name('indexProductClient');
+
+
 Route::group(['middleware' => 'auth'], function () {
 
     //Product
