@@ -1,10 +1,10 @@
 <x-app-layout>
     <div class="flex flex-col gap-4">
         <div class="flex justify-between items-center">
-            <h1 class="text-2xl">Brands</h1>
+            <h1 class="text-2xl">Products</h1>
             <button data-modal-toggle="small-modal" type="button"
                 class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800">Add
-                Brand</button>
+                Product</button>
         </div>
         <hr class="">
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -15,7 +15,13 @@
                             Logo
                         </th>
                         <th scope="col" class="px-6 py-3">
-                            Brand name
+                            Product name
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Description
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Product's brand
                         </th>
                         <th scope="col" class="px-6 py-3">
                             <span class="sr-only">Edit</span>
@@ -23,33 +29,36 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @forelse ($brands as $brand)
+                    @forelse ($products as $product)
                         <tr
                             class="bg-white md:text-2xl border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <td class="px-6 py-4">
-                                <img class="w-28" src="/storage/images/brands/{{ $brand->logo }}"
-                                    alt="{{ $brand->logo }}">
+                                <img class="w-28" src="/storage/images/products/{{ $product->image }}"
+                                    alt="{{ $product->image }}">
                             </td>
-
                             <td class="px-6 py-4">
-                                {{ $brand->name }}
+                                {{ $product->name }}
+                            </td>
+                            <td class="px-6 py-4 truncate max-w-sm">
+                                {{ $product->description }}
+                            </td>
+                            <td class="px-6 py-4">
+                                {{ $product->brand->name }}
                             </td>
                             <td class="px-6 py-4 text-right">
-                                @if ($brand->product->isEmpty())
-                                    <form method="POST" action="{{ route('deleteBrand', $brand->id) }}">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit"
-                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><i
-                                                class="fa fa-trash text-red-600" aria-hidden="true"></i></a>
-                                    </form>
-                                @endif
+                                <form method="POST" action="{{ route('deleteProduct', $product->id) }}">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit"
+                                        class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><i
+                                            class="fa fa-trash text-red-600" aria-hidden="true"></i></a>
+                                </form>
                             </td>
                         </tr>
                     @empty
                         <tr
                             class="bg-white md:text-xl text-center border-b dark:bg-gray-800 py-4 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <td colspan="5" class="py-4">No Brands</td>
+                            <td colspan="5" class="py-4">No Products</td>
                         </tr>
                     @endforelse
                 </tbody>
@@ -64,7 +73,7 @@
                 <!-- Modal header -->
                 <div class="flex justify-between items-center p-5 rounded-t border-b dark:border-gray-600">
                     <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                        Add Brand
+                        Add Product
                     </h3>
                     <button type="button"
                         class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
@@ -77,17 +86,35 @@
                     </button>
                 </div>
                 <!-- Modal body -->
-                <form method="POST" action="{{ route('storeBrand') }}" enctype="multipart/form-data">
+                <form method="POST" action="{{ route('storeProduct') }}" enctype="multipart/form-data">
                     @csrf
                     <div class="p-6 space-y-6">
                         @livewire('image')
                         <div class="relative z-0">
-                            <input type="text" name="name" id="small_standard"
+                            <input autocomplete="off" type="text" name="name"
                                 class="block py-2 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                 placeholder=" " />
                             <label for="small_standard"
-                                class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Brand
+                                class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Product
                                 Name</label>
+                        </div>
+                        <div class="relative z-0">
+                            <label for="underline_select" class="sr-only">Product's Brand</label>
+                            <select name="brand_id" id="underline_select"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+                                <option selected>Select Brand</option>
+                                @foreach ($brands as $brand)
+                                    <option value="{{ $brand->id }}">{{ $brand->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="relative z-0">
+                            <input autocomplete="off" type="text" name="description"
+                                class="block py-2 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder=" " />
+                            <label for="small_standard"
+                                class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                                Description</label>
                         </div>
                     </div>
                     <!-- Modal footer -->

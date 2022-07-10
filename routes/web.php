@@ -30,19 +30,24 @@ Route::middleware([
     })->name('dashboard');
 });
 
-//Product
-Route::controller(ProductController::class)->group(function () {
-    Route::get('/admin/product', 'index')->name('indexProduct');
-    Route::get('/admin/product/create',  'create')->name('createProduct');
-    Route::post('/admin/product/create',  'store')->name('storeProduct');
-    Route::get('/admin/product/{id}/edit',  'edit')->name('editProduct');
-    Route::put('/admin/product/{id}/edit',  'update')->name('updateProduct');
-});
+Route::group(['middleware' => 'auth'], function () {
 
-//brand
-Route::controller(BrandController::class)->group(function () {
-    Route::get('/admin/brand', 'index')->name('indexBrand');
-    Route::post('/admin/brand/create',  'store')->name('storeBrand');
-    Route::get('/admin/brand/{id}/edit',  'edit')->name('editBrand');
-    Route::put('/admin/brand/{id}/edit',  'update')->name('updateBrand');
+    //Product
+    Route::controller(ProductController::class)->group(function () {
+        Route::get('/admin/product', 'index')->name('indexProduct');
+        Route::get('/admin/product/create',  'create')->name('createProduct');
+        Route::post('/admin/product/create',  'store')->name('storeProduct');
+        Route::get('/admin/product/{id}/edit',  'edit')->name('editProduct');
+        Route::put('/admin/product/{id}/edit',  'update')->name('updateProduct');
+        Route::delete('/admin/product/{id}/delete',  'delete')->name('deleteProduct');
+    });
+
+    //brand
+    Route::controller(BrandController::class)->group(function () {
+        Route::get('/admin/brand', 'index')->name('indexBrand');
+        Route::post('/admin/brand/create',  'store')->name('storeBrand');
+        Route::get('/admin/brand/{id}/edit',  'edit')->name('editBrand');
+        Route::put('/admin/brand/{id}/edit',  'update')->name('updateBrand');
+        Route::delete('/admin/brand/{id}/delete',  'delete')->name('deleteBrand');
+    });
 });

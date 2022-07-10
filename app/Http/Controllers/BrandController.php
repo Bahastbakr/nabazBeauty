@@ -28,4 +28,15 @@ class BrandController extends Controller
             return redirect(route('indexBrand'));
         }
     }
+    public function delete($id)
+    {
+        $brand = Brand::find($id);
+
+        if (Storage::disk('public')->exists('images/brands/' . $brand->logo)) {
+            if (Storage::disk('public')->delete('images/brands/' . $brand->logo)) {
+                $brand->delete();
+                return redirect(route('indexBrand'));
+            }
+        }
+    }
 }
