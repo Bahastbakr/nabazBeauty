@@ -11,16 +11,16 @@
         </select>
     </div>
     <section data-theme="white" data-autoslide="true"
-        class="spotlight-group  grid grid-cols-3 justify-items-center mx-auto container">
+        class="spotlight-group gap-x-4 gap-y-4 grid md:grid-cols-3 justify-items-center mx-auto container">
         @foreach ($products as $product)
-            <div class="max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div class="w-full bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <div class="bg-nature-green-light flex justify-center p-4 rounded-b-2xl drop-shadow-lg">
-                    <img src="/storage/images/brands/{{ $product->brand->logo }}" class="img-responsive  w-24"
+                    <img src="/storage/images/brands/{{ $product->brand->logo }}" class="img-responsive  max-w-[25%]"
                         alt="">
                 </div>
                 <a data-description="{{ $product->description }}" data-title="{{ $product->name }}"
-                    href="/storage/images/products/{{ $product->image }}" class="spotlight">
-                    <img class="p-8 w-82 rounded-t-lg" src="/storage/images/products/{{ $product->image }}"
+                    href="/storage/images/products/{{ $product->image }}" class="spotlight flex justify-center">
+                    <img class="p-8 max-h-96 rounded-t-lg " src="/storage/images/products/{{ $product->image }}"
                         alt="product image" />
                 </a>
                 <div class="px-5 pb-5 text-justify">
