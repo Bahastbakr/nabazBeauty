@@ -15,12 +15,12 @@
         @foreach ($products as $product)
             <div class="max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <div class="bg-nature-green-light flex justify-center p-4 rounded-b-2xl drop-shadow-lg">
-                    <img src="/storage/images/brands/{{ $product->brand->logo }}" class="img-responsive w-24"
+                    <img src="/storage/images/brands/{{ $product->brand->logo }}" class="img-responsive  w-24"
                         alt="">
                 </div>
                 <a data-description="{{ $product->description }}" data-title="{{ $product->name }}"
                     href="/storage/images/products/{{ $product->image }}" class="spotlight">
-                    <img class="p-8 rounded-t-lg" src="/storage/images/products/{{ $product->image }}"
+                    <img class="p-8 w-82 rounded-t-lg" src="/storage/images/products/{{ $product->image }}"
                         alt="product image" />
                 </a>
                 <div class="px-5 pb-5 text-justify">

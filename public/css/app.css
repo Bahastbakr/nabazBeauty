@@ -9518,6 +9518,9 @@ input:checked + .toggle-bg {
 .w-64 {
   width: 16rem;
 }
+.w-52 {
+  width: 13rem;
+}
 .min-w-0 {
   min-width: 0px;
 }
