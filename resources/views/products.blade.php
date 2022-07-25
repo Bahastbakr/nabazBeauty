@@ -1,5 +1,4 @@
 <x-guest-layout>
-
     <section>
         @livewire('products')
     </section>

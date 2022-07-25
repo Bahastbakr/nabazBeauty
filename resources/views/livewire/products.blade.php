@@ -10,22 +10,22 @@
             @endforeach
         </select>
     </div>
-    <section class="grid grid-cols-3 justify-items-center mx-auto container">
+    <section data-theme="white" data-autoslide="true"
+        class="spotlight-group  grid grid-cols-3 justify-items-center mx-auto container">
         @foreach ($products as $product)
             <div class="max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <div class="bg-nature-green-light flex justify-center p-4 rounded-b-2xl drop-shadow-lg">
                     <img src="/storage/images/brands/{{ $product->brand->logo }}" class="img-responsive w-24"
                         alt="">
                 </div>
-                <a href="#">
+                <a data-description="{{ $product->description }}" data-title="{{ $product->name }}"
+                    href="/storage/images/products/{{ $product->image }}" class="spotlight">
                     <img class="p-8 rounded-t-lg" src="/storage/images/products/{{ $product->image }}"
                         alt="product image" />
                 </a>
                 <div class="px-5 pb-5 text-justify">
-                    <a href="#">
-                        <h5 class="text-2xl milliard-medium font-semibold tracking-tight text-gray-900 dark:text-white">
-                            {{ $product->name }}</h5>
-                    </a>
+                    <h5 class="text-2xl milliard-medium font-semibold tracking-tight text-gray-900 dark:text-white">
+                        {{ $product->name }}</h5>
                     <p class="milliard-thin">
                         {{ $product->description }}
                     </p>
@@ -34,4 +34,5 @@
             </div>
         @endforeach
     </section>
+
 </div>

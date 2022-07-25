@@ -75,7 +75,10 @@
                 <div
                     class="grid grid-cols-1 md:grid-cols-4 items-center place-items-center  md:grid-rows-2 space-x-5 gap-y-5  px-10 py-10">
                     @foreach ($brands as $brand)
-                        <img src="/storage/images/brands/{{ $brand->logo }}" alt="brand1">
+                        <a class="transition duration-200 hover:scale-110"
+                            href="{{ route('indexProductClientWithId', $brand->id) }}">
+                            <img src="/storage/images/brands/{{ $brand->logo }}" alt="brand1">
+                        </a>
                     @endforeach
                 </div>
                 <div class="flex justify-center">

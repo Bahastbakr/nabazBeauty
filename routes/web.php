@@ -33,6 +33,9 @@ Route::middleware([
 
 
 Route::get('/products', [App\Http\Controllers\ProductController::class, 'indexProductClient'])->name('indexProductClient');
+Route::get('/products/{id}', [App\Http\Controllers\ProductController::class, 'indexProductClientWithId'])->name('indexProductClientWithId');
+
+
 Route::get('/foo', function () {
     Artisan::call('storage:link');
 });

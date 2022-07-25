@@ -17,6 +17,8 @@
 
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
+    <script src="spotlight.bundle.js"></script>
+
     <style>
         body {
             background-color: #c1ceb2;
@@ -86,6 +88,7 @@
     <img style="z-index: -1;" src="/images/paper1.png" class="absolute md:w-80 top-0 right-0" alt="">
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
     @livewireScripts
+
 
 </body>
 

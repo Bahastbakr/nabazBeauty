@@ -46,7 +46,10 @@ class ProductController extends Controller
 
     public function indexProductClient()
     {
-
+        return view('products');
+    }
+    public function indexProductClientWithId($id)
+    {
         return view('products');
     }
 }

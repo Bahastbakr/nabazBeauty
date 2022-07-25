@@ -12,7 +12,13 @@ class Products extends Component
     public $selectedBrand;
     public function mount()
     {
-        $this->products = Product::all();
+        $get_id = request('id');
+        if ($get_id) {
+            $this->selectedBrand = $get_id;
+            $this->products = Product::where('brand_id', $get_id)->get();
+        } else {
+            $this->products = Product::all();
+        }
         $this->brands = Brand::all();
         return view('livewire.products');
     }
@@ -24,6 +30,7 @@ class Products extends Component
 
     public function updatedSelectedBrand($id)
     {
+
         $this->products = Product::where('brand_id', $id)->get();
         if (!$id) {
             $this->products = Product::all();
