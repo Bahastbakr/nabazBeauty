@@ -33,7 +33,9 @@ Route::middleware([
 
 
 Route::get('/products', [App\Http\Controllers\ProductController::class, 'indexProductClient'])->name('indexProductClient');
-
+Route::get('/foo', function () {
+    Artisan::call('storage:link');
+});
 
 Route::group(['middleware' => 'auth'], function () {
 
