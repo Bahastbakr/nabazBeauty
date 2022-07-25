@@ -22,6 +22,9 @@
             background-color: #c1ceb2;
         }
     </style>
+
+    @livewireStyles
+
 </head>
 
 <body>
@@ -82,6 +85,7 @@
     </main>
     <img style="z-index: -1;" src="/images/paper1.png" class="absolute md:w-80 top-0 right-0" alt="">
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+    @livewireScripts
 
 </body>
 

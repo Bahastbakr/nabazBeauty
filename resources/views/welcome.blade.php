@@ -7,19 +7,16 @@
         </div>
         <div class="grid grid-cols-1 justify-center md:grid-cols-2 md:px-48">
             <div class="items-center justify-center space-y-28 flex flex-col">
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-start">
                     <h1 class="text-9xl magiesta">Be natural,</h1>
-                    <div class="flex mr-80 items-start">
-                        <h1 class="text-6xl magiesta">Be beautiful,</h1>
-                    </div>
-                </div>
-                <div class="flex flex-col items-center">
+                    <h1 class="text-6xl magiesta">Be beautiful,</h1>
                     <h1 class="text-9xl magiesta nature-green">Be You..</h1>
                     <button type="button"
-                        class="text-white ml-44 bg-nature-green  hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center text-4xl mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">More
+                        class="text-white mt-10 bg-nature-green  hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center text-4xl mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">More
                         info</button>
 
                 </div>
+
             </div>
 
             <div id="animation-carousel" class="relative" data-carousel="static">
@@ -77,15 +74,9 @@
             <div class="flex flex-col bg-nature-green-light py-10 mx-20">
                 <div
                     class="grid grid-cols-1 md:grid-cols-4 items-center place-items-center  md:grid-rows-2 space-x-5 gap-y-5  px-10 py-10">
-                    <img src="/images/brand1.png" alt="brand1">
-                    <img src="/images/brand2.png" alt="brand2">
-                    <img src="/images/brand3.png" alt="brand3">
-                    <img src="/images/brand4.png" alt="brand4">
-
-                    <img src="/images/brand5.png" alt="brand5">
-                    <img src="/images/brand6.png" alt="brand6">
-                    <img src="/images/brand7.png" alt="brand7">
-                    <img src="/images/brand8.png" alt="brand8">
+                    @foreach ($brands as $brand)
+                        <img src="/storage/images/brands/{{ $brand->logo }}" alt="brand1">
+                    @endforeach
                 </div>
                 <div class="flex justify-center">
                     <button type="button"
