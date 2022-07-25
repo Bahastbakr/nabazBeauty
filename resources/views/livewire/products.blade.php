@@ -24,7 +24,8 @@
                         alt="product image" />
                 </a>
                 <div class="px-5 pb-5 text-justify">
-                    <h5 class="text-2xl milliard-medium font-semibold tracking-tight text-gray-900 dark:text-white">
+                    <h5
+                        class="text-2xl milliard-medium text-center font-semibold tracking-tight text-gray-900 dark:text-white">
                         {{ $product->name }}</h5>
                     <p class="milliard-thin">
                         {{ $product->description }}
