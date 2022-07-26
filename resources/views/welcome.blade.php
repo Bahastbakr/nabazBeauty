@@ -77,7 +77,7 @@
                     @foreach ($brands as $brand)
                         <a class="transition duration-200 hover:scale-110"
                             href="{{ route('indexProductClientWithId', $brand->id) }}">
-                            <img src="/storage/images/brands/{{ $brand->logo }}" alt="brand1">
+                            <img class="w-48" src="/storage/images/brands/{{ $brand->logo }}" alt="brand1">
                         </a>
                     @endforeach
                 </div>
