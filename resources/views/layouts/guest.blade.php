@@ -35,7 +35,7 @@
         <nav class="bg-transparent px-5 md:px-2 py-2.5   dark:bg-gray-800">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
                 <a href="/" class="flex items-center">
-                    <img src="/images/logo.png" class="mr-3 h-6 sm:h-12" alt="nabaz beauty Logo">
+                    <img src="/images/logo.png" class="mr-3 h-10 sm:h-12" alt="nabaz beauty Logo">
                 </a>
                 <button data-collapse-toggle="mobile-menu" type="button"
                     class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden focus:outline-none  dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -53,7 +53,7 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </button>
-                <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                <div class="hidden mt-5 w-full md:block md:w-auto" id="mobile-menu">
                     <ul
                         class="flex flex-col items-center mt-4  md:flex-row gap-8 milliard-thin md:text-2xl md:font-2xl">
                         <li>

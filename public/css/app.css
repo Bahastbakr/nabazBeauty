@@ -9797,6 +9797,9 @@ input:checked + .toggle-bg {
 .max-w-6xl {
   max-width: 72rem;
 }
+.max-w-\[50\%\] {
+  max-width: 50%;
+}
 .flex-1 {
   flex: 1 1 0%;
 }
