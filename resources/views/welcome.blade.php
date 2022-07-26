@@ -72,7 +72,7 @@
             </div>
 
             <div class="flex flex-col bg-nature-green-light py-10 mx-10 md:mx-20">
-                @livewire('load-brands', ['brands' => $brands])
+                @livewire('load-brands')
             </div>
         </section>
 
