@@ -64,7 +64,7 @@
                 </button>
             </div>
         </div>
-        <img src="/images/paper2.png" class="fixed  z-10 bottom-0 left-0 w-24 md:w-80 " alt="">
+        <img src="/images/paper2.png" class="fixed z-10 bottom-0 left-0 w-24 md:w-80 " alt="">
 
         <section class="flex flex-col gap-y-20 mb-48">
             <div class="flex justify-center">
@@ -72,20 +72,7 @@
             </div>
 
             <div class="flex flex-col bg-nature-green-light py-10 mx-10 md:mx-20">
-                <div
-                    class="grid grid-cols-1 md:grid-cols-4 items-center place-items-center  md:grid-rows-2 space-x-5 gap-y-5  px-10 py-10">
-                    @foreach ($brands as $brand)
-                        <a class="transition duration-200 hover:scale-110"
-                            href="{{ route('indexProductClientWithId', $brand->id) }}">
-                            <img class="w-48" src="/storage/images/brands/{{ $brand->logo }}" alt="brand1">
-                        </a>
-                    @endforeach
-                </div>
-                <div class="flex justify-center">
-                    <button type="button"
-                        class="text-white bg-nature-green milliard-light w-2/6 text-center hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center md:text-4xl mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">View
-                        all</button>
-                </div>
+                @livewire('load-brands', ['brands' => $brands])
             </div>
         </section>
 

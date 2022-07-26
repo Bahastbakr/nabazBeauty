@@ -17,8 +17,7 @@ use App\Models\Brand;
 */
 
 Route::get('/', function () {
-    $brands = Brand::all();
-    return view('welcome', ['brands' => $brands]);
+    return view('welcome');
 });
 
 Route::middleware([

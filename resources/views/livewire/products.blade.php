@@ -20,8 +20,8 @@
                 </div>
                 <a data-description="{{ $product->description }}" data-title="{{ $product->name }}"
                     href="/storage/images/products/{{ $product->image }}" class="spotlight flex justify-center">
-                    <img class="p-8 max-h-96 rounded-t-lg " src="/storage/images/products/{{ $product->image }}"
-                        alt="product image" />
+                    <img class="p-8 max-h-52 md:max-h-96 rounded-t-lg "
+                        src="/storage/images/products/{{ $product->image }}" alt="product image" />
                 </a>
                 <div class="px-5 pb-5 text-justify">
                     <h5 class=" milliard-medium text-center font-semibold tracking-tight text-gray-900 dark:text-white">
