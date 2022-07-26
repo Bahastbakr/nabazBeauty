@@ -21,7 +21,7 @@ class ProductController extends Controller
     {
         $file = $request->file('image');
         if ($request->file('image')) {
-            $fileName   = time() . $file->getClientOriginalName();
+            $fileName   = time() . '.' . $file->getClientOriginalExtension();
             Storage::disk('public')->put('images/products/' . $fileName, File::get($file));
             $product = new Product();
             $product->name = request('name');
@@ -51,5 +51,32 @@ class ProductController extends Controller
     public function indexProductClientWithId($id)
     {
         return view('products');
+    }
+
+    public function edit($id)
+    {
+        $brands = Brand::all();
+        $product = Product::find($id);
+        return view('products.edit', ['product' => $product, 'brands' => $brands]);
+    }
+
+    public function update($id)
+    {
+        $product = Product::find($id);
+        if (request('image')) {
+            $file_path = 'images/products/' . $product->image;
+            if (Storage::disk('public')->exists($file_path)) {
+                Storage::disk('public')->delete($file_path);
+            }
+            $file = request('image');
+            $fileName = time() . '.' . $file->getClientOriginalExtension();
+            Storage::disk('public')->put('images/products/' . $fileName, File::get($file));
+            $product->name = request('name');
+            $product->description = request('description');
+            $product->image = $fileName;
+            $product->brand_id = request('brand_id');
+        }
+        $product->update();
+        return redirect(route('indexProduct'));
     }
 }

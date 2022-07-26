@@ -1,4 +1,4 @@
-<div>
+<div class="p-5">
     <div class="mx-auto container">
         <label for="small" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Filter
             products</label>

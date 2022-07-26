@@ -31,8 +31,8 @@
 
 <body>
 
-    <main class="md:py-16 py-8 md:mx-24 md:my-24 mx-4 my-4 bg-white space-y-20 " style="border-radius:70px;">
-        <nav class="bg-transparent px-2 py-2.5   dark:bg-gray-800">
+    <main class="md:py-16 py-8 md:mx-24 md:my-24 mx-4 my-4 bg-white rounded-lg space-y-20 md:rounded-[70px]">
+        <nav class="bg-transparent px-5 md:px-2 py-2.5   dark:bg-gray-800">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
                 <a href="/" class="flex items-center">
                     <img src="/images/logo.png" class="mr-3 h-6 sm:h-12" alt="nabaz beauty Logo">

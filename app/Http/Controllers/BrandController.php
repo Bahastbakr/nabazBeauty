@@ -18,7 +18,7 @@ class BrandController extends Controller
     {
         $file = $request->file('image');
         if ($request->file('image')) {
-            $fileName   = time() . $file->getClientOriginalName();
+            $fileName   = time() . '.' . $file->getClientOriginalExtension();
             Storage::disk('public')->put('images/brands/' . $fileName, File::get($file));
             $brand = new Brand();
             $brand->name = request('name');
@@ -38,5 +38,30 @@ class BrandController extends Controller
                 return redirect(route('indexBrand'));
             }
         }
+    }
+
+    public function edit($id)
+    {
+        $brand = Brand::find($id);
+        return view('brands.edit', ['brand' => $brand]);
+    }
+
+
+    public function update($id)
+    {
+        $brand = Brand::find($id);
+        if (request('image')) {
+            $file_path = 'images/brands/' . $brand->logo;
+            if (Storage::disk('public')->exists($file_path)) {
+                Storage::disk('public')->delete($file_path);
+            }
+            $file = request('image');
+            $fileName = time() . '.' . $file->getClientOriginalExtension();
+            Storage::disk('public')->put('images/brands/' . $fileName, File::get($file));
+            $brand->name = request('name');
+            $brand->logo = $fileName;
+        }
+        $brand->update();
+        return redirect(route('indexBrand'));
     }
 }

@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-4 p-5">
         <div class="flex justify-between items-center">
             <h1 class="text-2xl">Products</h1>
             <button data-modal-toggle="small-modal" type="button"
@@ -45,14 +45,17 @@
                             <td class="px-6 py-4">
                                 {{ $product->brand->name }}
                             </td>
-                            <td class="px-6 py-4 text-right">
+                            <td class="px-6 py-4 text-right flex justify-center gap-2">
                                 <form method="POST" action="{{ route('deleteProduct', $product->id) }}">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit"
                                         class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><i
-                                            class="fa fa-trash text-red-600" aria-hidden="true"></i></a>
+                                            class="fa fa-trash text-red-600" aria-hidden="true"></i></button>
                                 </form>
+                                <a href="{{ route('editProduct', $product->id) }}"
+                                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><i
+                                        class="fas text-yellow-300 fa-edit"></i></i></a>
                             </td>
                         </tr>
                     @empty

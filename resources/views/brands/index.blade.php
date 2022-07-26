@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-4 p-5">
         <div class="flex justify-between items-center">
             <h1 class="text-2xl">Brands</h1>
             <button data-modal-toggle="small-modal" type="button"
@@ -34,16 +34,19 @@
                             <td class="px-6 py-4">
                                 {{ $brand->name }}
                             </td>
-                            <td class="px-6 py-4 text-right">
+                            <td class="px-6 py-4 flex gap-x-2 justify-center items-center text-right">
                                 @if ($brand->product->isEmpty())
                                     <form method="POST" action="{{ route('deleteBrand', $brand->id) }}">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><i
-                                                class="fa fa-trash text-red-600" aria-hidden="true"></i></a>
+                                                class="fa fa-trash text-red-600" aria-hidden="true"></i></button>
                                     </form>
                                 @endif
+                                <a href="{{ route('editBrand', $brand->id) }}"
+                                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><i
+                                        class="fas text-yellow-300 fa-edit    "></i></i></a>
                             </td>
                         </tr>
                     @empty
@@ -82,7 +85,7 @@
                     <div class="p-6 space-y-6">
                         @livewire('image')
                         <div class="relative z-0">
-                            <input type="text" name="name" id="small_standard"
+                            <input required type="text" name="name" id="small_standard"
                                 class="block py-2 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                 placeholder=" " />
                             <label for="small_standard"
@@ -93,7 +96,7 @@
                     <!-- Modal footer -->
                     <div
                         class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
-                        <button data-modal-toggle="small-modal" type="submit"
+                        <button type="submit"
                             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add</button>
                     </div>
                 </form>

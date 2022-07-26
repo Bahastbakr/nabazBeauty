@@ -1,4 +1,12 @@
 <div>
+    @if ($product && !$photo)
+        Photo Preview:
+        <img class="w-20 mb-2" src="/storage/images/products/{{ $product->image }}">
+    @endif
+    @if ($brand && !$photo)
+        Photo Preview:
+        <img class="w-20 mb-2" src="/storage/images/brands/{{ $brand->logo }}">
+    @endif
     @if ($photo)
         Photo Preview:
         <img class="w-20 mb-2" src="{{ $photo->temporaryUrl() }}">
@@ -13,7 +21,7 @@
                         d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12">
                     </path>
                 </svg>
-                @if ($photo)
+                @if ($product || $photo || $brand)
                     <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Change Image
                     </p>
                 @else

@@ -48,7 +48,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/admin/product/create',  'create')->name('createProduct');
         Route::post('/admin/product/create',  'store')->name('storeProduct');
         Route::get('/admin/product/{id}/edit',  'edit')->name('editProduct');
-        Route::put('/admin/product/{id}/edit',  'update')->name('updateProduct');
+        Route::put('/admin/product/{id}/update',  'update')->name('updateProduct');
         Route::delete('/admin/product/{id}/delete',  'delete')->name('deleteProduct');
     });
 
@@ -57,7 +57,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/admin/brand', 'index')->name('indexBrand');
         Route::post('/admin/brand/create',  'store')->name('storeBrand');
         Route::get('/admin/brand/{id}/edit',  'edit')->name('editBrand');
-        Route::put('/admin/brand/{id}/edit',  'update')->name('updateBrand');
+        Route::put('/admin/brand/{id}/update',  'update')->name('updateBrand');
         Route::delete('/admin/brand/{id}/delete',  'delete')->name('deleteBrand');
     });
 });

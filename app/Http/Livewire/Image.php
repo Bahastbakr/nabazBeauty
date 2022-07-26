@@ -8,7 +8,7 @@ use Livewire\WithFileUploads;
 class Image extends Component
 {
     use WithFileUploads;
-
+    public $brand, $product;
     public $photo;
 
     public function render()

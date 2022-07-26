@@ -1,18 +1,18 @@
 <x-guest-layout>
 
     <section>
-        <div class="ml-28">
-            <h3 class="text-3xl milliard-light">Top Products</h3>
+        <div class="md:ml-28 p-5">
+            <h3 class="text-2xl md:text-3xl milliard-light">Top Products</h3>
             <hr class="w-32">
         </div>
-        <div class="grid grid-cols-1 justify-center md:grid-cols-2 md:px-48">
-            <div class="items-center justify-center space-y-28 flex flex-col">
+        <div class="grid grid-cols-1 mb-32  justify-center md:grid-cols-2 md:px-48">
+            <div class="items-center order-last md:order-none justify-center space-y-28 flex flex-col">
                 <div class="flex flex-col items-start">
-                    <h1 class="text-9xl magiesta">Be natural,</h1>
-                    <h1 class="text-6xl magiesta">Be beautiful,</h1>
-                    <h1 class="text-9xl magiesta nature-green">Be You..</h1>
+                    <h1 class="text-6xl md:text-9xl magiesta">Be natural,</h1>
+                    <h1 class="text-3xl md:text-6xl magiesta">Be beautiful,</h1>
+                    <h1 class="text-6xl md:text-9xl magiesta nature-green">Be You..</h1>
                     <button type="button"
-                        class="text-white mt-10 bg-nature-green  hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center text-4xl mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">More
+                        class="text-white md:mt-10 bg-nature-green  hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300  rounded-full text-sm px-5 py-2.5 text-center md:text-4xl mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">More
                         info</button>
 
                 </div>
@@ -64,14 +64,14 @@
                 </button>
             </div>
         </div>
-        <img src="/images/paper2.png" class="fixed z-10 bottom-0 left-0 w-80 " alt="">
+        <img src="/images/paper2.png" class="fixed  z-10 bottom-0 left-0 w-24 md:w-80 " alt="">
 
         <section class="flex flex-col gap-y-20 mb-48">
             <div class="flex justify-center">
-                <h3 class="text-7xl magiesta">Our Brands</h3>
+                <h3 class=" text-5xl md:text-7xl magiesta">Our Brands</h3>
             </div>
 
-            <div class="flex flex-col bg-nature-green-light py-10 mx-20">
+            <div class="flex flex-col bg-nature-green-light py-10 mx-10 md:mx-20">
                 <div
                     class="grid grid-cols-1 md:grid-cols-4 items-center place-items-center  md:grid-rows-2 space-x-5 gap-y-5  px-10 py-10">
                     @foreach ($brands as $brand)
@@ -83,7 +83,7 @@
                 </div>
                 <div class="flex justify-center">
                     <button type="button"
-                        class="text-white bg-nature-green milliard-light w-2/6 text-center hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center text-4xl mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">View
+                        class="text-white bg-nature-green milliard-light w-2/6 text-center hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center md:text-4xl mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">View
                         all</button>
                 </div>
             </div>
@@ -93,17 +93,17 @@
             <div class="flex flex-col">
                 <div class="flex justify-center items-center">
                     <hr class="w-1/6" style="height:1px;border:none;color:#7d9672;background-color:#7d9672;" />
-                    <h3 class="text-7xl magiesta">Advantages of</h3>
+                    <h3 class=" text-4xl md:text-7xl magiesta">Advantages of</h3>
                     <hr class="w-1/6" style="height:1px;border:none;color:#7d9672;background-color:#7d9672;" />
                 </div>
-                <h3 class="text-6xl text-center magiesta">our products</h3>
+                <h3 class=" text-4xl md:text-6xl text-center magiesta">our products</h3>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2">
                 <div class="flex flex-col justify-center items-center">
                     <img src="/images/Asset 14.png" alt="">
                     <h3 class="text-3xl milliard-medium mb-4">Only natural ingredients</h3>
-                    <p class="text-xl md:px-32  milliard-thin text-justify">
+                    <p class="text-xl md:px-32 p-5  milliard-thin text-justify">
                         Lorem ipsum dolor sit amet, consectetuer
                         adipiscing elit, sed diam nonummy nibh
                         euismod tincidunt ut laoreet dolore magna
@@ -117,7 +117,7 @@
                 <div class="flex flex-col justify-center items-center">
                     <img src="/images/Asset 13.png" alt="">
                     <h3 class="text-3xl milliard-medium mb-4">Gluten-free Products</h3>
-                    <p class="text-xl md:px-32  milliard-thin text-justify">
+                    <p class="text-xl md:px-32 p-5  milliard-thin text-justify">
                         Lorem ipsum dolor sit amet, consectetuer
                         adipiscing elit, sed diam nonummy nibh
                         euismod tincidunt ut laoreet dolore magna
@@ -146,10 +146,10 @@
                 </svg>
             </div>
             <div class="py-10">
-                <h3 class="text-7xl magiesta text-white text-center">Happy Customers</h3>
-                <div id="controls-carousel" class="relative md:px-96" data-carousel="static">
+                <h3 class="text-4xl md:text-7xl magiesta text-white text-center">Happy Customers</h3>
+                <div id="controls-carousel" class="relative px-12 md:px-96" data-carousel="static">
                     <!-- Carousel wrapper -->
-                    <div class="overflow-hidden relative h-48 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                    <div class="overflow-hidden relative h-80 rounded-lg  md:h-80 2xl:h-96">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
                             <div
@@ -165,7 +165,7 @@
                                     vel eum iriure dolor in
                                 </p>
                                 <div class="flex flex-col self-end text-white">
-                                    <h3 class="text-2xl milliard-medium">Sozy kareem</h3>
+                                    <h3 class="text-xl md:text-2xl milliard-medium">Sozy kareem</h3>
                                     <h3 class="text-sm milliard-light">Reular Customer
                                     </h3>
 
@@ -188,7 +188,7 @@
                                     vel eum iriure dolor in
                                 </p>
                                 <div class="flex flex-col self-end text-white">
-                                    <h3 class="text-2xl milliard-medium">Sozy kareem</h3>
+                                    <h3 class="text-xl md:text-2xl milliard-medium">Sozy kareem</h3>
                                     <h3 class="text-sm milliard-light">Reular Customer
                                     </h3>
 
@@ -200,10 +200,10 @@
                     </div>
                     <!-- Slider controls -->
                     <button type="button"
-                        class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                        class="flex absolute top-0 left-0 z-30 justify-center items-center md:px-4 h-full cursor-pointer group focus:outline-none"
                         data-carousel-prev>
                         <span
-                            class="inline-flex justify-center items-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            class="inline-flex justify-center items-center w-10 h-10 rounded-full md:bg-white/30 dark:bg-gray-800/30 md:group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 md:group-focus:ring-4 md:group-focus:ring-white dark:group-focus:ring-gray-800/70 md:group-focus:outline-none">
                             <svg class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -213,10 +213,10 @@
                         </span>
                     </button>
                     <button type="button"
-                        class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                        class="flex absolute top-0 right-0 z-30 justify-center items-center md:px-4 h-full cursor-pointer group focus:outline-none"
                         data-carousel-next>
                         <span
-                            class="inline-flex justify-center items-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            class="inline-flex justify-center items-center w-10 h-10 rounded-full md:bg-white/30 dark:bg-gray-800/30 md:group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 md:group-focus:ring-4 md:group-focus:ring-white dark:group-focus:ring-gray-800/70 md:group-focus:outline-none">
                             <svg class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -240,10 +240,10 @@
 
         <section class="flex flex-col gap-y-20  mb-48">
             <div class="flex flex-col">
-                <h3 class="text-6xl text-center magiesta">Latest Articles</h3>
+                <h3 class="text-5xl md:text-6xl text-center magiesta">Latest Articles</h3>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:px-48">
+            <div class="grid grid-cols-1 p-5 md:grid-cols-3 gap-5 md:px-48">
                 <div>
                     <img src="/images/latestA1.png" alt="latestA1">
                 </div>
@@ -259,25 +259,27 @@
         <section class="flex flex-col gap-y-20  mb-48">
 
             <div class="grid grid-cols-1 space-y-28 md:px-48">
-                <div class="grid grid-cols-2 gap-5">
-                    <div class="flex flex-col">
-                        <h3 class="text-9xl text-center magiesta">Contact us</h3>
-                        <h3 class="text-8xl text-center magiesta">Anytime!</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="flex flex-col mb-5">
+                        <h3 class="text-5xl md:text-9xl text-center magiesta">Contact us</h3>
+                        <h3 class="text-4xl md:text-8xl text-center magiesta">Anytime!</h3>
                     </div>
                     <div class="flex flex-col gap-y-4">
-                        <div class="flex flex-col items-start">
-                            <h3 class="text-3xl  text-nature-green-dark milliard-medium">E-mail:</h3>
-                            <h3 class="text-2xl  milliard-light"><i> Info@nabazbeauty.com </i></h3>
+                        <div class="flex flex-col items-center md:items-start">
+                            <h3 class="text-2xl md:text-3xl  text-nature-green-dark milliard-medium">E-mail:</h3>
+                            <h3 class="text-lg md:text-2xl  milliard-light"><i> Info@nabazbeauty.com </i></h3>
                         </div>
-                        <div class="flex flex-col items-start">
-                            <h3 class="text-3xl  text-nature-green-dark milliard-medium">Address</h3>
-                            <h3 class="text-2xl  milliard-light"><i> As Sulaymaniyah, Iraq, Ashaba Spi
+                        <div class="flex flex-col items-center md:items-start">
+                            <h3 class=" text-2xl md:text-3xl  text-nature-green-dark milliard-medium">Address</h3>
+                            <h3 class="text-lg md:text-2xl text-center  milliard-light"><i> As Sulaymaniyah, Iraq,
+                                    Ashaba
+                                    Spi
                                     Building, NO.50
                                 </i></h3>
                         </div>
-                        <div class="flex flex-col items-start">
-                            <h3 class="text-3xl  text-nature-green-dark milliard-medium">Phone</h3>
-                            <h3 class="text-2xl  milliard-light"><i> +964 (0) 770 151 4166 </i>
+                        <div class="flex flex-col items-center md:items-start">
+                            <h3 class="text-2xl md:text-3xl  text-nature-green-dark milliard-medium">Phone</h3>
+                            <h3 class="text-lg md:text-2xl milliard-light"><i> +964 (0) 770 151 4166 </i>
                         </div>
 
 
@@ -285,12 +287,12 @@
                     <div class="grid grid-cols-2 gap-5"></div>
                 </div>
 
-                <div class="grid grid-cols-2 items-center gap-5">
+                <div class="grid md:grid-cols-2 items-center gap-5">
                     <div class="flex flex-col">
                         <h3 class="text-5xl text-center magiesta">Or leave</h3>
-                        <h3 class="text-8xl text-center magiesta">a Message</h3>
+                        <h3 class="text-6xl md:text-8xl text-center magiesta">a Message</h3>
                     </div>
-                    <form class="flex flex-col gap-y-10">
+                    <form class="flex p-5 flex-col gap-y-10">
                         <div class="mb-5">
                             <div class="relative z-0">
                                 <input type="text" id="floating_standard"
