@@ -1,8 +1,9 @@
 <div>
     <div
-        class="grid grid-cols-2 md:grid-cols-4 items-center place-items-center  md:grid-rows-2 md:space-x-5 gap-y-14 gap-x-10  px-10 py-10">
+        class="grid grid-cols-2 md:grid-cols-4 items-center place-items-center  md:grid-rows-2 md:space-x-5 gap-y-10 gap-x-10  px-10 py-5">
         @foreach ($brands as $brand)
-            <a class="transition duration-200 hover:scale-110" href="{{ route('indexProductClientWithId', $brand->id) }}">
+            <a data-aos="zoom-in" data-aos-duration="1000" class="transition duration-200 hover:scale-110"
+                href="{{ route('indexProductClientWithId', $brand->id) }}">
                 <img class="w-32 md:w-48" src="/storage/images/brands/{{ $brand->logo }}" alt="brand1">
             </a>
         @endforeach

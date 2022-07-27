@@ -8,10 +8,13 @@
         <div class="grid grid-cols-1 mb-32  justify-center md:grid-cols-2 md:px-48">
             <div class="items-center order-last md:order-none justify-center space-y-28 flex flex-col">
                 <div class="flex flex-col items-start">
-                    <h1 class="text-6xl md:text-9xl magiesta">Be natural,</h1>
-                    <h1 class="text-3xl md:text-6xl magiesta">Be beautiful,</h1>
-                    <h1 class="text-6xl md:text-9xl magiesta nature-green">Be You..</h1>
-                    <button type="button"
+                    <h1 data-aos="fade-left" data-aos-duration="500" class="text-6xl md:text-9xl magiesta">Be natural,</h1>
+                    <h1 data-aos="fade-right" data-aos-duration="1000" class="text-3xl md:text-6xl magiesta">Be
+                        beautiful,
+                    </h1>
+                    <h1 data-aos="fade-left" data-aos-duration="1200"
+                        class="text-6xl md:text-9xl magiesta nature-green">Be You..</h1>
+                    <button data-aos="fade-up" data-aos-duration="500" type="button"
                         class="text-white md:mt-10 bg-nature-green  hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300  rounded-full text-sm px-5 py-2.5 text-center md:text-4xl mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">More
                         info</button>
 
@@ -19,18 +22,19 @@
 
             </div>
 
-            <div id="animation-carousel" class="relative" data-carousel="static">
+            <div id="animation-carousel" data-aos="fade-left" data-aos-duration="1200" class="relative"
+                data-carousel="static">
                 <!-- Carousel wrapper -->
                 <div class="overflow-hidden relative h-80 md:h-screen">
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-linear" data-carousel-item="active">
                         <div class="flex justify-center items-center">
-                            <img src="/images/Asset 2.png" class="w-48 md:w-96" alt="...">
+                            <img src="/images/testImg.png" class="w-80 md:w-full" alt="...">
                         </div>
                     </div>
                     <div class="hidden duration-700 ease-linear" data-carousel-item>
                         <div class="flex justify-center">
-                            <img src="/images/Asset 2.png" class="w-48 md:w-96 " alt="...">
+                            <img src="/images/testImg.png" class="w-80 md:w-full " alt="...">
                         </div>
                     </div>
 
@@ -66,9 +70,9 @@
         </div>
         <img src="/images/paper2.png" class="fixed z-10 bottom-0 left-0 w-24 md:w-80 " alt="">
 
-        <section class="flex flex-col gap-y-20 mb-48">
-            <div class="flex justify-center">
-                <h3 class=" text-5xl md:text-7xl magiesta">Our Brands</h3>
+        <section class="flex flex-col gap-y-10 mb-48">
+            <div data-aos="fade-down" data-aos-duration="500" class="flex justify-center">
+                <h3 class="text-5xl md:text-7xl magiesta">Our Brands</h3>
             </div>
 
             <div class="flex flex-col bg-nature-green-light py-10 mx-10 md:mx-20">
@@ -77,7 +81,7 @@
         </section>
 
         <section class="flex flex-col gap-y-20  mb-48">
-            <div class="flex flex-col">
+            <div data-aos="fade-down" data-aos-duration="700" class="flex flex-col">
                 <div class="flex justify-center items-center">
                     <hr class="w-1/6" style="height:1px;border:none;color:#7d9672;background-color:#7d9672;" />
                     <h3 class=" text-4xl md:text-7xl magiesta">Advantages of</h3>
@@ -86,34 +90,24 @@
                 <h3 class=" text-4xl md:text-6xl text-center magiesta">our products</h3>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class="flex flex-col justify-center items-center">
-                    <img src="/images/Asset 14.png" alt="">
-                    <h3 class="text-3xl milliard-medium mb-4">Only natural ingredients</h3>
-                    <p class="text-xl md:px-32 p-5  milliard-thin text-justify">
-                        Lorem ipsum dolor sit amet, consectetuer
-                        adipiscing elit, sed diam nonummy nibh
-                        euismod tincidunt ut laoreet dolore magna
-                        aliquam erat volutpat. Ut wisi enim ad
-                        minim veniam, quis nostrud exerci tation
-                        ullamcorper suscipit lobortis nisl ut aliquip
-                        ex ea commodo consequat. Duis autem
-                        vel eum iriure dolor in
-                    </p>
+            <div class="grid gap-y-14 md:px-32 grid-cols-1 md:grid-cols-4">
+                <div data-aos="zoom-in" data-aos-duration="300" class="flex flex-col justify-center items-center">
+                    <img class="w-14 md:w-20" src="/images/Asset 1.svg" alt="">
+                    <h3 class="text-3xl magiesta ">Organic Product</h3>
                 </div>
-                <div class="flex flex-col justify-center items-center">
-                    <img src="/images/Asset 13.png" alt="">
-                    <h3 class="text-3xl milliard-medium mb-4">Gluten-free Products</h3>
-                    <p class="text-xl md:px-32 p-5  milliard-thin text-justify">
-                        Lorem ipsum dolor sit amet, consectetuer
-                        adipiscing elit, sed diam nonummy nibh
-                        euismod tincidunt ut laoreet dolore magna
-                        aliquam erat volutpat. Ut wisi enim ad
-                        minim veniam, quis nostrud exerci tation
-                        ullamcorper suscipit lobortis nisl ut aliquip
-                        ex ea commodo consequat. Duis autem
-                        vel eum iriure dolor in
-                    </p>
+                <div data-aos="zoom-in" data-aos-duration="500" class="flex flex-col justify-center items-center">
+                    <img class="w-14 md:w-20" src="/images/Asset 2.svg" alt="">
+                    <h3 class="text-3xl magiesta ">Cruelty Free</h3>
+
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="700" class="flex flex-col justify-center items-center">
+                    <img class="w-14 md:w-20" src="/images/Asset 5.svg" alt="">
+                    <h3 class="text-3xl magiesta ">Lab tested</h3>
+
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="1000" class="flex flex-col justify-center items-center">
+                    <img class="w-14 md:w-20" src="/images/Asset 6.svg" alt="">
+                    <h3 class="text-3xl magiesta ">No toxic chemicals</h3>
 
                 </div>
             </div>
@@ -133,7 +127,8 @@
                 </svg>
             </div>
             <div class="py-10">
-                <h3 class="text-4xl md:text-7xl magiesta text-white text-center">Happy Customers</h3>
+                <h3 data-aos="fade-down" data-aos-duration="700"
+                    class="text-4xl md:text-7xl magiesta text-white text-center">Happy Customers</h3>
                 <div id="controls-carousel" class="relative px-12 md:px-96" data-carousel="static">
                     <!-- Carousel wrapper -->
                     <div class="overflow-hidden relative h-80 rounded-lg  md:h-80 2xl:h-96">
@@ -226,18 +221,18 @@
 
 
         <section class="flex flex-col gap-y-20  mb-48">
-            <div class="flex flex-col">
+            <div data-aos="fade-down" data-aos-duration="700" class="flex flex-col">
                 <h3 class="text-5xl md:text-6xl text-center magiesta">Latest Articles</h3>
             </div>
 
             <div class="grid grid-cols-1 p-5 md:grid-cols-3 gap-5 md:px-48">
-                <div>
+                <div data-aos="fade-up" data-aos-duration="700">
                     <img src="/images/latestA1.png" alt="latestA1">
                 </div>
-                <div>
+                <div data-aos="fade-down" data-aos-duration="1000">
                     <img src="/images/latestA2.png" alt="latestA2">
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1200">
                     <img src="/images/latestA3.png" alt="latestA3">
                 </div>
             </div>

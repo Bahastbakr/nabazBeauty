@@ -18,6 +18,7 @@
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
     <script src="spotlight.bundle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
         body {
@@ -75,9 +76,14 @@
 
 
                         <li class="flex gap-4">
-                            <i class="fa-lg fa-brands fa-facebook-f"></i>
-                            <i class="fa-lg fa-brands fa-instagram"></i>
-                            <i class="fa-lg fa-brands fa-twitter"></i>
+                            <a class="hover:scale-125 transion duration-300"
+                                href="https://www.facebook.com/nabazbeauty"> <i
+                                    class="fa-lg fa-brands fa-facebook-f"></i></a>
+                            <a class="hover:scale-125 transion duration-300" href="https://instagram.com/nabazbeauty">
+                                <i class="fa-lg fa-brands fa-instagram"></i></a>
+                            <a class="hover:scale-125 transion duration-300" href=""> <i
+                                    class="fa-lg fa-brands fa-twitter"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -89,7 +95,10 @@
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
     @livewireScripts
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
