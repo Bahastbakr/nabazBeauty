@@ -27,7 +27,7 @@
                 <div class="px-5 pb-5 ">
                     <h5 class=" milliard-medium text-center font-semibold tracking-tight text-gray-900 dark:text-white">
                         {{ $product->name }}</h5>
-                    <p class="milliard-thin">
+                    <p class="milliard-thin sr-only">
                         {{ $product->description }}
                     </p>
 

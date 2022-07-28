@@ -4,7 +4,7 @@
         @foreach ($brands as $brand)
             <a data-aos="zoom-in" data-aos-duration="1000" class="transition duration-200 hover:scale-110"
                 href="{{ route('indexProductClientWithId', $brand->id) }}">
-                <img class="w-32 md:w-48" src="/storage/images/brands/{{ $brand->logo }}" alt="brand1">
+                <img class="w-32 md:w-52" src="/storage/images/brands/{{ $brand->logo }}" alt="brand1">
             </a>
         @endforeach
     </div>

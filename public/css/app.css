@@ -11510,8 +11510,8 @@ input:checked + .toggle-bg {
     width: 5rem;
   }
 
-  .md\:w-48 {
-    width: 12rem;
+  .md\:w-52 {
+    width: 13rem;
   }
 
   .md\:grid-cols-3 {
