@@ -62,7 +62,7 @@
         "sort-packages": true,
         "platform-check": false,
         "platform": {
-            "php": "5.5"
+            "php": "8.0.22"
         }
     },
     "minimum-stability": "dev",
