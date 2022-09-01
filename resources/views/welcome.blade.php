@@ -137,20 +137,12 @@
                             <div
                                 class="flex flex-col gap-2 block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
                                 <p class="md:text-2xl text-white milliard-thin text-justify">
-                                    Lorem ipsum dolor sit amet, consectetuer
-                                    adipiscing elit, sed diam nonummy nibh
-                                    euismod tincidunt ut laoreet dolore magna
-                                    aliquam erat volutpat. Ut wisi enim ad
-                                    minim veniam, quis nostrud exerci tation
-                                    ullamcorper suscipit lobortis nisl ut aliquip
-                                    ex ea commodo consequat. Duis autem
-                                    vel eum iriure dolor in
+                                    Your products are really perfect, I personally use it constantly and benefited a lot
+                                    from it, thanks alot
+
                                 </p>
                                 <div class="flex flex-col self-end text-white">
-                                    <h3 class="text-xl md:text-2xl milliard-medium">Sozy kareem</h3>
-                                    <h3 class="text-sm milliard-light">Reular Customer
-                                    </h3>
-
+                                    <h3 class="text-xl md:text-2xl milliard-medium">Niga A. Karem</h3>
                                 </div>
 
                             </div>
@@ -160,20 +152,12 @@
                             <div
                                 class="flex flex-col gap-2 block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
                                 <p class="md:text-2xl text-white milliard-thin text-justify">
-                                    Lorem ipsum dolor sit amet, consectetuer
-                                    adipiscing elit, sed diam nonummy nibh
-                                    euismod tincidunt ut laoreet dolore magna
-                                    aliquam erat volutpat. Ut wisi enim ad
-                                    minim veniam, quis nostrud exerci tation
-                                    ullamcorper suscipit lobortis nisl ut aliquip
-                                    ex ea commodo consequat. Duis autem
-                                    vel eum iriure dolor in
+                                    Im as a salon owner, I can say that their products are the best we have used untill
+                                    now
+                                    And the people who visit us are satisfied with the product and visit us frequently
                                 </p>
                                 <div class="flex flex-col self-end text-white">
-                                    <h3 class="text-xl md:text-2xl milliard-medium">Sozy kareem</h3>
-                                    <h3 class="text-sm milliard-light">Reular Customer
-                                    </h3>
-
+                                    <h3 class="text-xl md:text-2xl milliard-medium">Sozy O. Omar</h3>
                                 </div>
 
                             </div>
