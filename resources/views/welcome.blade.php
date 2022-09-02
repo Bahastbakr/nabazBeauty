@@ -74,6 +74,36 @@
         </div>
         <img src="/images/paper2.png" class="fixed z-10 bottom-0 left-0 w-24 md:w-80 " alt="">
 
+
+        <section class="flex flex-col gap-y-10 mb-48" id="aboutUs">
+            <div data-aos="fade-down" data-aos-duration="500" class="flex justify-center">
+                <h3 class="text-5xl md:text-7xl magiesta z-50">About Us</h3>
+            </div>
+            <div class="grid grid-cols-1 items-center p-5 md:grid-cols-2 gap-5 md:px-48">
+                <div data-aos="fade-up" data-aos-duration="700" class="z-50 px-10">
+                    <p class="md:text-2xl md:first-letter:text-9xl text-black milliard-thin text-justify">
+                        <strong>Nabaz Beauty</strong> is one of the companies in the field
+                        of import and
+                        export of
+                        beauty products
+                        and
+                        salon in Sulaimani, which has more than 6 years of experience in this field and has agents
+                        of 13
+                        international brands in the field of beauty in Iraq and Iran.
+                    </p>
+                </div>
+                <div class="absolute bg-nature-green-light h-[70%] md:h-[55%]  w-[40%] z-0">
+
+                </div>
+                <div data-aos="fade-down" data-aos-duration="1000" class="z-50">
+                    <img src="/images/aboutUs.jpg" alt="latestA2" class="shadow-md">
+                </div>
+
+            </div>
+
+        </section>
+
+
         <section class="flex flex-col gap-y-10 mb-48">
             <div data-aos="fade-down" data-aos-duration="500" class="flex justify-center">
                 <h3 class="text-5xl md:text-7xl magiesta">Our Brands</h3>
@@ -214,15 +244,16 @@
             </div>
 
             <div class="grid grid-cols-1 p-5 md:grid-cols-3 gap-5 md:px-48">
-                <div data-aos="fade-up" data-aos-duration="700">
+                <a href="https://www.instagram.com/p/CgPMNNet_b0/" data-aos="fade-up" data-aos-duration="700">
                     <img src="/images/latestA1.jpg" alt="latestA1">
-                </div>
-                <div data-aos="fade-down" data-aos-duration="1000">
+                </a>
+                <a href="https://www.instagram.com/p/CfmF_e1IpVy/" data-aos="fade-down" data-aos-duration="1000">
                     <img src="/images/latestA2.jpg" alt="latestA2">
-                </div>
-                <div data-aos="fade-up" data-aos-duration="1200">
+                </a>
+                <a href="https://www.facebook.com/nabazbeauty/photos/a.163372692886784/169263112297742/"
+                    data-aos="fade-up" data-aos-duration="1200">
                     <img src="/images/latestA3.jpg" alt="latestA3">
-                </div>
+                </a>
             </div>
         </section>
 
