@@ -22,22 +22,26 @@
 
             </div>
 
-            <div id="animation-carousel" data-aos="fade-left" data-aos-duration="1200" class="relative"
-                data-carousel="static">
+            <div id="animation-carousel" data-aos="fade-up" data-aos-duration="1200" class="relative"
+                data-carousel="slide">
                 <!-- Carousel wrapper -->
                 <div class="overflow-hidden relative h-80 md:h-screen">
                     <!-- Item 1 -->
-                    <div class="hidden duration-700 ease-linear" data-carousel-item="active">
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <div class="flex justify-center items-center">
-                            <img src="/images/testImg.png" class="w-80 md:w-full" alt="...">
-                        </div>
-                    </div>
-                    <div class="hidden duration-700 ease-linear" data-carousel-item>
-                        <div class="flex justify-center">
                             <img src="/images/testImg.png" class="w-80 md:w-full " alt="...">
                         </div>
                     </div>
-
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div class="flex justify-center items-center">
+                            <img src="/images/fan002.png" class="w-80 md:w-full ">
+                        </div>
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                        <div class="flex justify-center items-center">
+                            <img src="/images/floractive.png" class="w-80 md:w-full  ">
+                        </div>
+                    </div>
                 </div>
                 <!-- Slider controls -->
                 <button type="button"
@@ -211,18 +215,18 @@
 
             <div class="grid grid-cols-1 p-5 md:grid-cols-3 gap-5 md:px-48">
                 <div data-aos="fade-up" data-aos-duration="700">
-                    <img src="/images/latestA1.png" alt="latestA1">
+                    <img src="/images/latestA1.jpg" alt="latestA1">
                 </div>
                 <div data-aos="fade-down" data-aos-duration="1000">
-                    <img src="/images/latestA2.png" alt="latestA2">
+                    <img src="/images/latestA2.jpg" alt="latestA2">
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1200">
-                    <img src="/images/latestA3.png" alt="latestA3">
+                    <img src="/images/latestA3.jpg" alt="latestA3">
                 </div>
             </div>
         </section>
 
-        <section class="flex flex-col gap-y-20  mb-48">
+        <section class="flex flex-col gap-y-20  mb-48" id="contact">
 
             <div class="grid grid-cols-1 space-y-28 md:px-48">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
