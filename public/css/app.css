@@ -9608,15 +9608,6 @@ input:checked + .toggle-bg {
 .z-40 {
   z-index: 40;
 }
-.-z-50 {
-  z-index: -50;
-}
-.-z-\[3\] {
-  z-index: -3;
-}
-.z-\[0\] {
-  z-index: 0;
-}
 .order-last {
   order: 9999;
 }
@@ -9798,21 +9789,6 @@ input:checked + .toggle-bg {
 .h-80 {
   height: 20rem;
 }
-.h-\[50\%\] {
-  height: 50%;
-}
-.h-\[55\%\] {
-  height: 55%;
-}
-.h-60 {
-  height: 15rem;
-}
-.h-96 {
-  height: 24rem;
-}
-.h-\[60\%\] {
-  height: 60%;
-}
 .h-\[70\%\] {
   height: 70%;
 }
@@ -9879,6 +9855,9 @@ input:checked + .toggle-bg {
 .w-24 {
   width: 6rem;
 }
+.w-\[40\%\] {
+  width: 40%;
+}
 .w-1\/6 {
   width: 16.666667%;
 }
@@ -9890,15 +9869,6 @@ input:checked + .toggle-bg {
 }
 .w-64 {
   width: 16rem;
-}
-.w-\[50\%\] {
-  width: 50%;
-}
-.w-\[30\%\] {
-  width: 30%;
-}
-.w-\[40\%\] {
-  width: 40%;
 }
 .min-w-0 {
   min-width: 0px;
@@ -10365,10 +10335,6 @@ input:checked + .toggle-bg {
 .bg-white\/30 {
   background-color: rgb(255 255 255 / 0.3);
 }
-.bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
 }
@@ -10496,6 +10462,10 @@ input:checked + .toggle-bg {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 }
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
 .py-48 {
   padding-top: 12rem;
   padding-bottom: 12rem;
@@ -10503,10 +10473,6 @@ input:checked + .toggle-bg {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
-}
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 .pt-6 {
   padding-top: 1.5rem;
@@ -10851,18 +10817,6 @@ input:checked + .toggle-bg {
 }
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-}
-.first-letter\:text-7xl::first-letter {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-.first-letter\:text-5xl::first-letter {
-  font-size: 3rem;
-  line-height: 1;
-}
-.first-letter\:text-9xl::first-letter {
-  font-size: 8rem;
-  line-height: 1;
 }
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
@@ -11620,12 +11574,12 @@ input:checked + .toggle-bg {
     height: 100vh;
   }
 
-  .md\:h-80 {
-    height: 20rem;
-  }
-
   .md\:h-\[55\%\] {
     height: 55%;
+  }
+
+  .md\:h-80 {
+    height: 20rem;
   }
 
   .md\:max-h-96 {
@@ -11802,11 +11756,6 @@ input:checked + .toggle-bg {
 
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
-  }
-
-  .md\:hover\:text-blue-700:hover {
-    --tw-text-opacity: 1;
-    color: rgb(26 86 219 / var(--tw-text-opacity));
   }
 
   .md\:hover\:text-green-700:hover {
