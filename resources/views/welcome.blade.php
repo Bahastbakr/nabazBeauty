@@ -163,7 +163,7 @@
             <div class="py-10">
                 <h3 data-aos="fade-down" data-aos-duration="700"
                     class="text-4xl md:text-7xl magiesta text-white text-center">Happy Customers</h3>
-                <div id="controls-carousel" class="relative px-12 md:px-96" data-carousel="static">
+                <div id="controls-carousel" class="relative px-12 md:px-96" data-carousel="slide">
                     <!-- Carousel wrapper -->
                     <div class="overflow-hidden relative h-80 rounded-lg  md:h-80 2xl:h-96">
                         <!-- Item 1 -->
