@@ -16,12 +16,12 @@
             <div data-aos="zoom-in-up" data-aos-duration="700"
                 class="w-full bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <div class="bg-nature-green-light flex justify-center p-4 rounded-b-2xl drop-shadow-lg">
-                    <img src="/storage/images/brands/{{ $product->brand->logo }}" class="img-responsive  max-w-[50%]"
-                        alt="">
+                    <img loading="lazy" src="/storage/images/brands/{{ $product->brand->logo }}"
+                        class="img-responsive  max-w-[50%]" alt="">
                 </div>
                 <a data-description="{{ $product->description }}" data-title="{{ $product->name }}"
                     href="/storage/images/products/{{ $product->image }}" class="spotlight flex justify-center">
-                    <img class="p-8 max-h-52 md:max-h-96 rounded-t-lg "
+                    <img loading="lazy" class="p-8 max-h-52 md:max-h-96 rounded-t-lg "
                         src="/storage/images/products/{{ $product->image }}" alt="product image" />
                 </a>
                 <div class="px-5 pb-5 ">

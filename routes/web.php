@@ -33,6 +33,7 @@ Route::middleware([
 
 Route::get('/products', [App\Http\Controllers\ProductController::class, 'indexProductClient'])->name('indexProductClient');
 Route::get('/products/{id}', [App\Http\Controllers\ProductController::class, 'indexProductClientWithId'])->name('indexProductClientWithId');
+Route::post('/contact', [App\Http\Controllers\EmailController::class, 'store'])->name('storeEmail');
 
 
 Route::get('/foo', function () {

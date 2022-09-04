@@ -29,17 +29,17 @@
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <div class="flex justify-center items-center">
-                            <img src="/images/testImg.png" class="w-80 md:w-full " alt="...">
+                            <img loading="lazy" src="/images/testImg.png" class="w-80 md:w-full " alt="...">
                         </div>
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <div class="flex justify-center items-center">
-                            <img src="/images/fan002.png" class="w-80 md:w-full ">
+                            <img loading="lazy" src="/images/fan002.png" class="w-80 md:w-full ">
                         </div>
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
                         <div class="flex justify-center items-center">
-                            <img src="/images/floractive.png" class="w-80 md:w-full  ">
+                            <img loading="lazy" src="/images/floractive.png" class="w-80 md:w-full  ">
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
 
                 </div>
                 <div data-aos="fade-down" data-aos-duration="1000" class="z-50">
-                    <img src="/images/aboutUs.jpg" alt="latestA2" class="shadow-md">
+                    <img loading="lazy" src="/images/aboutUs.jpg" alt="latestA2" class="shadow-md">
                 </div>
 
             </div>
@@ -245,14 +245,14 @@
 
             <div class="grid grid-cols-1 p-5 md:grid-cols-3 gap-5 md:px-48">
                 <a href="https://www.instagram.com/p/CgPMNNet_b0/" data-aos="fade-up" data-aos-duration="700">
-                    <img src="/images/latestA1.jpg" alt="latestA1">
+                    <img loading="lazy" src="/images/latestA1.jpg" alt="latestA1">
                 </a>
                 <a href="https://www.instagram.com/p/CfmF_e1IpVy/" data-aos="fade-down" data-aos-duration="1000">
-                    <img src="/images/latestA2.jpg" alt="latestA2">
+                    <img loading="lazy" src="/images/latestA2.jpg" alt="latestA2">
                 </a>
                 <a href="https://www.facebook.com/nabazbeauty/photos/a.163372692886784/169263112297742/"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img src="/images/latestA3.jpg" alt="latestA3">
+                    <img loading="lazy" src="/images/latestA3.jpg" alt="latestA3">
                 </a>
             </div>
         </section>
@@ -289,14 +289,25 @@
                 </div>
 
                 <div class="grid md:grid-cols-2 items-center gap-5">
+
                     <div class="flex flex-col">
                         <h3 class="text-5xl text-center magiesta">Or leave</h3>
                         <h3 class="text-6xl md:text-8xl text-center magiesta">a Message</h3>
                     </div>
-                    <form class="flex p-5 flex-col gap-y-10">
+                    <form action="{{ route('storeEmail') }}" method="POST" class="flex p-5 flex-col gap-y-10">
+                        @csrf
+
+                        @if (session('success'))
+                            <div id="submitted"
+                                class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800"
+                                role="alert">
+                                <span class="font-medium"> {{ session('success') }}
+                            </div>
+                        @endif
+
                         <div class="mb-5">
                             <div class="relative z-0">
-                                <input type="text" id="floating_standard"
+                                <input required name="name" type="text" id="floating_standard"
                                     class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
                                     placeholder=" " />
                                 <label for="floating_standard"
@@ -306,7 +317,7 @@
                         </div>
                         <div class="mb-5">
                             <div class="relative z-0">
-                                <input type="text" id="floating_standard"
+                                <input required name="email" type="text" id="floating_standard"
                                     class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
                                     placeholder=" " />
                                 <label for="floating_standard"
@@ -316,7 +327,7 @@
                         </div>
                         <div class="mb-5">
                             <div class="relative z-0">
-                                <input type="text" id="floating_standard"
+                                <input required name="message" type="text" id="floating_standard"
                                     class="block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
                                     placeholder=" " />
                                 <label for="floating_standard"
@@ -325,7 +336,7 @@
                             </div>
                         </div>
                         <div class="mb-5">
-                            <button type="button"
+                            <button type="submit"
                                 class="text-white bg-nature-green hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-900 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Send</button>
 
                         </div>
