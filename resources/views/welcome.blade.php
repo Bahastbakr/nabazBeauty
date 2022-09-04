@@ -29,17 +29,17 @@
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <div class="flex justify-center items-center">
-                            <img loading="lazy" src="/images/testImg.png" class="w-80 md:w-full " alt="...">
+                            <img src="/images/testImg.png" class="w-80 md:w-full " alt="...">
                         </div>
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <div class="flex justify-center items-center">
-                            <img loading="lazy" src="/images/fan002.png" class="w-80 md:w-full ">
+                            <img src="/images/fan002.png" class="w-80 md:w-full ">
                         </div>
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
                         <div class="flex justify-center items-center">
-                            <img loading="lazy" src="/images/floractive.png" class="w-80 md:w-full  ">
+                            <img src="/images/floractive.png" class="w-80 md:w-full  ">
                         </div>
                     </div>
                 </div>
