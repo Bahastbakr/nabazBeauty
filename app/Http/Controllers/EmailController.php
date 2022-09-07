@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Mail;
-use App\models\Email;
 
 class EmailController extends Controller
 {
@@ -12,7 +11,7 @@ class EmailController extends Controller
 
     public function store(Request $request)
     {
-        $contact = new Email();
+        $contact = new \App\models\Email();
         $contact->name = $request->name;
         $contact->email = $request->email;
         $contact->message = $request->message;
