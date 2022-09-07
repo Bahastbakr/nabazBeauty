@@ -1,22 +1,22 @@
 <x-guest-layout>
 
     <section>
-        <div class="md:ml-28 p-5">
-            <h3 class="text-2xl md:text-3xl milliard-light">Top Products</h3>
+        <div class="xl:ml-28 p-5">
+            <h3 class="text-2xl xl:text-3xl milliard-light">Top Products</h3>
             <hr class="w-32">
         </div>
-        <div class="grid grid-cols-1 mb-32  justify-center md:grid-cols-2 md:px-48">
+        <div class="grid grid-cols-1 mb-32  justify-center md:grid-cols-2 xl:px-48">
             <div class="items-center order-last md:order-none justify-center space-y-28 flex flex-col">
                 <div class="flex flex-col items-start">
-                    <h1 data-aos="fade-left" data-aos-duration="500" class="text-6xl md:text-9xl magiesta">Be natural,</h1>
-                    <h1 data-aos="fade-right" data-aos-duration="1000" class="text-3xl md:text-6xl magiesta">Be
+                    <h1 data-aos="fade-left" data-aos-duration="500" class="text-6xl xl:text-9xl magiesta">Be natural,</h1>
+                    <h1 data-aos="fade-right" data-aos-duration="1000" class="text-3xl xl:text-6xl magiesta">Be
                         beautiful,
                     </h1>
                     <h1 data-aos="fade-left" data-aos-duration="1200"
-                        class="text-6xl md:text-9xl magiesta nature-green">Be You..</h1>
+                        class="text-6xl xl:text-9xl magiesta nature-green">Be You..</h1>
                     <a href="{{ route('indexProductClient') }}" data-aos="fade-up" data-aos-duration="500"
                         type="button"
-                        class="text-white md:mt-10 bg-nature-green  hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300  rounded-full text-sm px-5 py-2.5 text-center md:text-4xl mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">More
+                        class="text-white xl:mt-10 bg-nature-green  hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300  rounded-full text-sm px-5 py-2.5 text-center xl:text-4xl mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">More
                         info</a>
 
                 </div>
@@ -26,21 +26,21 @@
             <div id="animation-carousel" data-aos="fade-up" data-aos-duration="1200" class="relative"
                 data-carousel="slide">
                 <!-- Carousel wrapper -->
-                <div class="overflow-hidden relative h-80 md:h-screen">
+                <div class="overflow-hidden relative h-80 xl:h-screen">
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <div class="flex justify-center items-center">
-                            <img src="/images/testImg.png" class="w-80 md:w-full " alt="...">
+                            <img src="/images/testImg.png" class="w-80 xl:w-full " alt="...">
                         </div>
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <div class="flex justify-center items-center">
-                            <img src="/images/fan002.png" class="w-80 md:w-full ">
+                            <img src="/images/fan002.png" class="w-80 xl:w-full ">
                         </div>
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
                         <div class="flex justify-center items-center">
-                            <img src="/images/floractive.png" class="w-80 md:w-full  ">
+                            <img src="/images/floractive.png" class="w-80 xl:w-full  ">
                         </div>
                     </div>
                 </div>
@@ -73,16 +73,16 @@
                 </button>
             </div>
         </div>
-        <img src="/images/paper2.png" class="fixed z-10 bottom-0 left-0 w-24 md:w-80 " alt="">
+        <img src="/images/paper2.png" class="fixed z-50 bottom-0 left-0 w-24 md:w-72" alt="">
 
 
         <section class="flex flex-col gap-y-10 mb-48" id="aboutUs">
             <div data-aos="fade-down" data-aos-duration="500" class="flex justify-center">
-                <h3 class="text-5xl md:text-7xl magiesta z-50">About Us</h3>
+                <h3 class="text-5xl xl:text-7xl magiesta z-50">About Us</h3>
             </div>
-            <div class="grid grid-cols-1 items-center p-5 md:grid-cols-2 gap-5 md:px-48">
-                <div data-aos="fade-up" data-aos-duration="700" class="z-50 px-10">
-                    <p class="md:text-2xl md:first-letter:text-9xl text-black milliard-thin text-justify">
+            <div class="grid grid-cols-1 items-center p-5 md:grid-cols-2 gap-5 xl:px-48">
+                <div data-aos="fade-up" data-aos-duration="700" class="z-40 px-10">
+                    <p class="xl:text-2xl xl:first-letter:text-9xl text-black milliard-thin text-justify">
                         <strong>Nabaz Beauty</strong> is one of the companies in the field
                         of import and
                         export of
@@ -96,8 +96,8 @@
                 <div class="absolute bg-nature-green-light h-[70%] md:h-[55%]  w-[40%] z-0">
 
                 </div>
-                <div data-aos="fade-down" data-aos-duration="1000" class="z-50">
-                    <img loading="lazy" src="/images/aboutUs.jpg" alt="latestA2" class="shadow-md">
+                <div data-aos="fade-down" data-aos-duration="1000" class="z-40">
+                    <img loading="lazy" src="/images/aboutUs.jpg" alt="latestA2" class="shadow-xl">
                 </div>
 
             </div>
@@ -107,10 +107,10 @@
 
         <section class="flex flex-col gap-y-10 mb-48">
             <div data-aos="fade-down" data-aos-duration="500" class="flex justify-center">
-                <h3 class="text-5xl md:text-7xl magiesta">Our Brands</h3>
+                <h3 class="text-5xl xl:text-7xl magiesta">Our Brands</h3>
             </div>
 
-            <div class="flex flex-col bg-nature-green-light py-10 mx-10 md:mx-20">
+            <div class="flex flex-col bg-nature-green-light py-10 mx-10 xl:mx-20">
                 @livewire('load-brands')
             </div>
         </section>
@@ -119,30 +119,30 @@
             <div data-aos="fade-down" data-aos-duration="700" class="flex flex-col">
                 <div class="flex justify-center items-center">
                     <hr class="w-1/6" style="height:1px;border:none;color:#7d9672;background-color:#7d9672;" />
-                    <h3 class=" text-4xl md:text-7xl magiesta">Advantages of</h3>
+                    <h3 class=" text-4xl xl:text-7xl magiesta">Advantages of</h3>
                     <hr class="w-1/6" style="height:1px;border:none;color:#7d9672;background-color:#7d9672;" />
                 </div>
-                <h3 class=" text-4xl md:text-6xl text-center magiesta">our products</h3>
+                <h3 class=" text-4xl xl:text-6xl text-center magiesta">our products</h3>
             </div>
 
             <div class="grid gap-y-14 md:px-32 grid-cols-1 md:grid-cols-4">
                 <div data-aos="zoom-in" data-aos-duration="300" class="flex flex-col justify-center items-center">
-                    <img class="w-14 md:w-20" src="/images/Asset 1.svg" alt="">
+                    <img class="w-14 xl:w-20" src="/images/Asset 1.svg" alt="">
                     <h3 class="text-3xl magiesta ">Organic Product</h3>
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="500" class="flex flex-col justify-center items-center">
-                    <img class="w-14 md:w-20" src="/images/Asset 2.svg" alt="">
+                    <img class="w-14 xl:w-20" src="/images/Asset 2.svg" alt="">
                     <h3 class="text-3xl magiesta ">Cruelty Free</h3>
 
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="700" class="flex flex-col justify-center items-center">
-                    <img class="w-14 md:w-20" src="/images/Asset 5.svg" alt="">
+                    <img class="w-14 xl:w-20" src="/images/Asset 5.svg" alt="">
                     <h3 class="text-3xl magiesta ">Lab tested</h3>
 
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="1000" class="flex flex-col justify-center items-center">
-                    <img class="w-14 md:w-20" src="/images/Asset 6.svg" alt="">
-                    <h3 class="text-3xl magiesta ">No toxic chemicals</h3>
+                    <img class="w-14 xl:w-20" src="/images/Asset 6.svg" alt="">
+                    <h3 class="text-3xl magiesta text-center">No toxic chemicals</h3>
 
                 </div>
             </div>
@@ -163,21 +163,21 @@
             </div>
             <div class="py-10">
                 <h3 data-aos="fade-down" data-aos-duration="700"
-                    class="text-4xl md:text-7xl magiesta text-white text-center">Happy Customers</h3>
-                <div id="controls-carousel" class="relative px-12 md:px-96" data-carousel="slide">
+                    class="text-4xl xl:text-7xl magiesta text-white text-center">Happy Customers</h3>
+                <div id="controls-carousel" class="relative px-12 xl:px-96" data-carousel="slide">
                     <!-- Carousel wrapper -->
-                    <div class="overflow-hidden relative h-80 rounded-lg  md:h-80 2xl:h-96">
+                    <div class="overflow-hidden relative h-80 rounded-xl  xl:h-80 2xl:h-96">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
                             <div
                                 class="flex flex-col gap-2 block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
-                                <p class="md:text-2xl text-white milliard-thin text-justify">
+                                <p class="xl:text-2xl text-white milliard-thin text-justify">
                                     Your products are really perfect, I personally use it constantly and benefited a lot
                                     from it, thanks alot
 
                                 </p>
                                 <div class="flex flex-col self-end text-white">
-                                    <h3 class="text-xl md:text-2xl milliard-medium">Niga A. Karem</h3>
+                                    <h3 class="text-xl xl:text-2xl milliard-medium">Niga A. Karem</h3>
                                 </div>
 
                             </div>
@@ -186,13 +186,13 @@
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
                             <div
                                 class="flex flex-col gap-2 block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
-                                <p class="md:text-2xl text-white milliard-thin text-justify">
+                                <p class="xl:text-2xl text-white milliard-thin text-justify">
                                     Im as a salon owner, I can say that their products are the best we have used untill
                                     now
                                     And the people who visit us are satisfied with the product and visit us frequently
                                 </p>
                                 <div class="flex flex-col self-end text-white">
-                                    <h3 class="text-xl md:text-2xl milliard-medium">Sozy O. Omar</h3>
+                                    <h3 class="text-xl xl:text-2xl milliard-medium">Sozy O. Omar</h3>
                                 </div>
 
                             </div>
@@ -201,10 +201,10 @@
                     </div>
                     <!-- Slider controls -->
                     <button type="button"
-                        class="flex absolute top-0 left-0 z-30 justify-center items-center md:px-4 h-full cursor-pointer group focus:outline-none"
+                        class="flex absolute top-0 left-0 z-30 justify-center items-center xl:px-4 h-full cursor-pointer group focus:outline-none"
                         data-carousel-prev>
                         <span
-                            class="inline-flex justify-center items-center w-10 h-10 rounded-full md:bg-white/30 dark:bg-gray-800/30 md:group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 md:group-focus:ring-4 md:group-focus:ring-white dark:group-focus:ring-gray-800/70 md:group-focus:outline-none">
+                            class="inline-flex justify-center items-center w-10 h-10 rounded-full xl:bg-white/30 dark:bg-gray-800/30 xl:group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 xl:group-focus:ring-4 xl:group-focus:ring-white dark:group-focus:ring-gray-800/70 xl:group-focus:outline-none">
                             <svg class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -214,10 +214,10 @@
                         </span>
                     </button>
                     <button type="button"
-                        class="flex absolute top-0 right-0 z-30 justify-center items-center md:px-4 h-full cursor-pointer group focus:outline-none"
+                        class="flex absolute top-0 right-0 z-30 justify-center items-center xl:px-4 h-full cursor-pointer group focus:outline-none"
                         data-carousel-next>
                         <span
-                            class="inline-flex justify-center items-center w-10 h-10 rounded-full md:bg-white/30 dark:bg-gray-800/30 md:group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 md:group-focus:ring-4 md:group-focus:ring-white dark:group-focus:ring-gray-800/70 md:group-focus:outline-none">
+                            class="inline-flex justify-center items-center w-10 h-10 rounded-full xl:bg-white/30 dark:bg-gray-800/30 xl:group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 xl:group-focus:ring-4 xl:group-focus:ring-white dark:group-focus:ring-gray-800/70 xl:group-focus:outline-none">
                             <svg class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -241,10 +241,10 @@
 
         <section class="flex flex-col gap-y-20  mb-48">
             <div data-aos="fade-down" data-aos-duration="700" class="flex flex-col">
-                <h3 class="text-5xl md:text-6xl text-center magiesta">Latest Articles</h3>
+                <h3 class="text-5xl xl:text-6xl text-center magiesta">Latest Articles</h3>
             </div>
 
-            <div class="grid grid-cols-1 p-5 md:grid-cols-3 gap-5 md:px-48">
+            <div class="grid grid-cols-1 p-5 md:grid-cols-3 gap-5 xl:px-48">
                 <a href="https://www.instagram.com/p/CgPMNNet_b0/" data-aos="fade-up" data-aos-duration="700">
                     <img loading="lazy" src="/images/latestA1.jpg" alt="latestA1">
                 </a>
@@ -260,28 +260,28 @@
 
         <section class="flex flex-col gap-y-20  mb-48" id="contact">
 
-            <div class="grid grid-cols-1 space-y-28 md:px-48">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <div class="flex flex-col mb-5">
-                        <h3 class="text-5xl md:text-9xl text-center magiesta">Contact us</h3>
-                        <h3 class="text-4xl md:text-8xl text-center magiesta">Anytime!</h3>
+            <div class="grid grid-cols-1 justify-items-center space-y-28 xl:px-48">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <div class="flex flex-col mb-5 justify-center">
+                        <h3 class="text-5xl xl:text-9xl text-center magiesta">Contact us</h3>
+                        <h3 class="text-4xl xl:text-8xl text-center magiesta">Anytime!</h3>
                     </div>
                     <div class="flex flex-col gap-y-4">
-                        <div class="flex flex-col items-center md:items-start">
-                            <h3 class="text-2xl md:text-3xl  text-nature-green-dark milliard-medium">E-mail:</h3>
-                            <h3 class="text-lg md:text-2xl  milliard-light"><i> Info@nabazbeauty.com </i></h3>
+                        <div class="flex flex-col items-center xl:items-start">
+                            <h3 class="text-2xl xl:text-3xl  text-nature-green-dark milliard-medium">E-mail:</h3>
+                            <h3 class="text-xl xl:text-2xl  milliard-light"><i> Info@nabazbeauty.com </i></h3>
                         </div>
-                        <div class="flex flex-col items-center md:items-start">
-                            <h3 class=" text-2xl md:text-3xl  text-nature-green-dark milliard-medium">Address</h3>
-                            <h3 class="text-lg md:text-2xl text-center  milliard-light"><i> As Sulaymaniyah, Iraq,
+                        <div class="flex flex-col items-center xl:items-start">
+                            <h3 class=" text-2xl xl:text-3xl  text-nature-green-dark milliard-medium">Address</h3>
+                            <h3 class="text-xl xl:text-2xl text-center  milliard-light"><i> As Sulaymaniyah, Iraq,
                                     Ashaba
                                     Spi
                                     Building, NO.50
                                 </i></h3>
                         </div>
-                        <div class="flex flex-col items-center md:items-start">
-                            <h3 class="text-2xl md:text-3xl  text-nature-green-dark milliard-medium">Phone</h3>
-                            <h3 class="text-lg md:text-2xl milliard-light"><i> +964 (0) 770 151 4166 </i>
+                        <div class="flex flex-col items-center xl:items-start">
+                            <h3 class="text-2xl xl:text-3xl  text-nature-green-dark milliard-medium">Phone</h3>
+                            <h3 class="text-xl xl:text-2xl milliard-light"><i> +964 (0) 770 151 4166 </i>
                         </div>
 
 
@@ -289,18 +289,19 @@
                     <div class="grid grid-cols-2 gap-5"></div>
                 </div>
 
-                <div class="grid md:grid-cols-2 items-center gap-5">
+                <div class="grid lg:grid-cols-2 items-center gap-5">
 
-                    <div class="flex flex-col">
+                    <div class="flex flex-col justify-center">
                         <h3 class="text-5xl text-center magiesta">Or leave</h3>
-                        <h3 class="text-6xl md:text-8xl text-center magiesta">a Message</h3>
+                        <h3 class="text-6xl xl:text-8xl text-center magiesta">a Message</h3>
                     </div>
-                    <form action="{{ route('storeEmail') }}" method="POST" class="flex p-5 flex-col gap-y-10">
+                    <form action="{{ route('storeEmail') }}" method="POST"
+                        class="flex p-20 lg:p-5 flex-col justify-center gap-y-10">
                         @csrf
 
                         @if (session('success'))
                             <div id="submitted"
-                                class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800"
+                                class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-xl dark:bg-green-200 dark:text-green-800"
                                 role="alert">
                                 <span class="font-medium"> {{ session('success') }}
                             </div>
