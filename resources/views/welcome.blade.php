@@ -260,7 +260,7 @@
 
         <section class="flex flex-col gap-y-20  mb-48" id="contact">
 
-            <div class="grid grid-cols-1 justify-items-center space-y-28 xl:px-48">
+            <div class="grid grid-cols-1  space-y-28 xl:px-48">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
                     <div class="flex flex-col mb-5 justify-center">
                         <h3 class="text-5xl xl:text-9xl text-center magiesta">Contact us</h3>
