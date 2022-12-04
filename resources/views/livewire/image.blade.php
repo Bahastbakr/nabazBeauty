@@ -34,6 +34,8 @@
         </label>
     </div>
 
+
+
     @error('photo')
         <span class="error">{{ $message }}</span>
     @enderror

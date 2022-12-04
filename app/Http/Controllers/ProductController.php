@@ -12,13 +12,19 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::all();
+        $products = Product::paginate(10);
         $brands = Brand::all();
         return view('products.index', ['products' => $products, 'brands' => $brands]);
     }
 
     public function store(Request $request)
     {
+        $request->validate([
+            'image' => 'required',
+            'brand_id' => 'required',
+            'name' => 'required'
+
+        ]);
         $file = $request->file('image');
         if ($request->file('image')) {
             $fileName   = time() . '.' . $file->getClientOriginalExtension();
@@ -60,8 +66,13 @@ class ProductController extends Controller
         return view('products.edit', ['product' => $product, 'brands' => $brands]);
     }
 
-    public function update($id)
+    public function update($id, Request $request)
     {
+        $request->validate([
+            'brand_id' => 'required',
+            'name' => 'required'
+
+        ]);
         $product = Product::find($id);
         if (request('image')) {
             $file_path = 'images/products/' . $product->image;
@@ -71,11 +82,11 @@ class ProductController extends Controller
             $file = request('image');
             $fileName = time() . '.' . $file->getClientOriginalExtension();
             Storage::disk('public')->put('images/products/' . $fileName, File::get($file));
-            $product->name = request('name');
-            $product->description = request('description');
             $product->image = $fileName;
-            $product->brand_id = request('brand_id');
         }
+        $product->name = request('name');
+        $product->brand_id = request('brand_id');
+        $product->description = request('description');
         $product->update();
         return redirect(route('indexProduct'));
     }

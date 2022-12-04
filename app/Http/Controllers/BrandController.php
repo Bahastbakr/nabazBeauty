@@ -16,6 +16,10 @@ class BrandController extends Controller
     }
     public function store(Request $request)
     {
+        $request->validate([
+            'image' => 'required',
+            'name' => 'required'
+        ]);
         $file = $request->file('image');
         if ($request->file('image')) {
             $fileName   = time() . '.' . $file->getClientOriginalExtension();
@@ -47,8 +51,11 @@ class BrandController extends Controller
     }
 
 
-    public function update($id)
+    public function update($id, Request $request)
     {
+        $request->validate([
+            'name' => 'required'
+        ]);
         $brand = Brand::find($id);
         if (request('image')) {
             $file_path = 'images/brands/' . $brand->logo;
@@ -57,10 +64,11 @@ class BrandController extends Controller
             }
             $file = request('image');
             $fileName = time() . '.' . $file->getClientOriginalExtension();
-            Storage::disk('public')->put('images/brands/' . $fileName, File::get($file));
-            $brand->name = request('name');
             $brand->logo = $fileName;
+            Storage::disk('public')->put('images/brands/' . $fileName, File::get($file));
         }
+        $brand->name = request('name');
+
         $brand->update();
         return redirect(route('indexBrand'));
     }
