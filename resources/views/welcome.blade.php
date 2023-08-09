@@ -245,16 +245,15 @@
             </div>
 
             <div class="grid grid-cols-1 p-5 md:grid-cols-3 gap-5 xl:px-48">
-                <a href="https://www.instagram.com/p/CgPMNNet_b0/" data-aos="fade-up" data-aos-duration="700">
+                <div href="" data-aos="fade-up" data-aos-duration="700">
                     <img loading="lazy" src="/images/latestA1.jpg" alt="latestA1">
-                </a>
-                <a href="https://www.instagram.com/p/CfmF_e1IpVy/" data-aos="fade-down" data-aos-duration="1000">
+                </div>
+                <div data-aos="fade-down" data-aos-duration="1000">
                     <img loading="lazy" src="/images/latestA2.jpg" alt="latestA2">
-                </a>
-                <a href="https://www.facebook.com/nabazbeauty/photos/a.163372692886784/169263112297742/"
-                    data-aos="fade-up" data-aos-duration="1200">
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1200">
                     <img loading="lazy" src="/images/latestA3.jpg" alt="latestA3">
-                </a>
+                </div>
             </div>
         </section>
 

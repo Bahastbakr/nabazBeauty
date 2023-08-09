@@ -80,7 +80,8 @@
                             <a class="hover:scale-125 transion duration-300"
                                 href="https://www.facebook.com/nabazbeauty"> <i
                                     class="fa-lg fa-brands fa-facebook-f"></i></a>
-                            <a class="hover:scale-125 transion duration-300" href="https://instagram.com/nabazbeauty">
+                            <a class="hover:scale-125 transion duration-300"
+                                href="https://www.instagram.com/nabaz.beauty/">
                                 <i class="fa-lg fa-brands fa-instagram"></i></a>
 
                         </li>
